@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/ghost.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Neeraj's portfolio website." />
+    <meta property="og:title" content="Neeraj's portfolio website.">
+    <meta property="og:image" content="%PUBLIC_URL%/ghost.png">
+    <meta property="og:url" content="https://neerajsewani.dev">
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/ghost.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>NeerajSewani</title>
+
+    <!-- Font Preloading -->
+    <link
+      rel="preload"
+      href="./fonts/archia-semibold-webfont.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/archia-medium-webfont.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/archia-bold-webfont.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <style>
+      /* font-face declarations for preloaded fonts */
+      /* These are the only 3 fonts being used.
+      font-face declarations for thin, regular and light fonts should be added as needed */
+      @font-face {
+        font-family: "Archia";
+        src: url("/fonts/archia-semibold-webfont.eot");
+        src: local("Archia"),
+          url("/fonts/archia-semibold-webfont.eot?#iefix")
+            format("embedded-opentype"),
+          url("/fonts/archia-semibold-webfont.woff2") format("woff2"),
+          url("/fonts/archia-semibold-webfont.woff") format("woff"),
+          url("/fonts/archia-semibold-webfont.ttf") format("truetype");
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Archia";
+        src: url("/fonts/archia-medium-webfont.eot");
+        src: local("Archia"),
+          url("/fonts/archia-medium-webfont.eot?#iefix")
+            format("embedded-opentype"),
+          url("/fonts/archia-medium-webfont.woff2") format("woff2"),
+          url("/fonts/archia-medium-webfont.woff") format("woff"),
+          url("/fonts/archia-medium-webfont.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Archia";
+        src: url("./fonts/archia-bold-webfont.eot");
+        src: local("Archia"),
+          url("./fonts/archia-bold-webfont.eot?#iefix")
+            format("embedded-opentype"),
+          url("/fonts/archia-bold-webfont.woff2") format("woff2"),
+          url("/fonts/archia-bold-webfont.woff") format("woff"),
+          url("/fonts/archia-bold-webfont.ttf") format("truetype");
+        font-weight: 900;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
+
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      .navbar {
+        background-color: #ffffff;
+        color: #4169e1;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .navbar h1 {
+        display: inline-block;
+        text-align: left;
+        padding: 10px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div class="navbar">
+        <h1>Neeraj's Portfolio</h1>
+        <p class="page-info">
+          Loading...
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
